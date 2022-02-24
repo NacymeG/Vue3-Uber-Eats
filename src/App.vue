@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <RestaurantRow v-for="(card, index) in 3" :key="index" /> -->
+  <HomePage />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomePage from './pages/HomePage.vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { HomePage },
+};
 </script>
 
 <style>
+@import url('./style/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Roboto', 'sans-serif';
 }
 </style>
