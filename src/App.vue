@@ -1,5 +1,4 @@
 <template>
-  <!-- <RestaurantRow v-for="(card, index) in 3" :key="index" /> -->
   <HomePage />
 </template>
 
